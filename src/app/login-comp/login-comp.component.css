@@ -1,0 +1,25 @@
+form{
+    padding: 2em;
+    text-align: center;
+    background: rgba(230,230,230,0.3);
+    width: 400px;
+    border-radius: 20px;
+    margin: auto auto;
+}
+.flex{
+    display:flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center;
+    margin:2em;
+}
+
+.button{
+    background: linear-gradient(to right bottom, rgb(37, 81, 116),rgb(0, 114, 201));
+    color: white;
+    padding:0.1em 0em;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 200px;
+    margin: auto auto;
+}

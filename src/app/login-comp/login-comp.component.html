@@ -1,0 +1,49 @@
+<form *ngIf="response.type != true">
+    
+    <div class="flex">
+
+        <label 
+            for="username"
+            class="label">
+            UserName
+        </label>
+        <input
+            type="text"
+            placeholder="Username"
+            class="input"
+            #username
+        />
+
+    </div>
+
+    <div class="flex">
+
+        <label 
+            for="password"
+            class="label">
+            Password
+        </label>
+        <input
+            type="password"
+            placeholder="Password"
+            class="input"
+            #password
+        />
+
+    </div>
+
+    <div 
+        class=" button"
+        (click)="handleClick(username.value, password.value)">
+        <p>Login</p>
+    </div>
+
+    <p>{{response.data}}</p>
+
+</form>
+
+<form *ngIf="response.type == true"
+    class="loggedin">
+    <h1>Welcome To Scorpius</h1>
+    <h2>You are SucessFully Login..</h2>
+</form>
